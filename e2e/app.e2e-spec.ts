@@ -1,10 +1,10 @@
-import { UploadDemo2Page } from './app.po';
+import { AssignmentS00160273Page } from './app.po';
 
-describe('upload-demo2 App', function() {
-  let page: UploadDemo2Page;
+describe('assignment-s00160273 App', function() {
+  let page: AssignmentS00160273Page;
 
   beforeEach(() => {
-    page = new UploadDemo2Page();
+    page = new AssignmentS00160273Page();
   });
 
   it('should display message saying app works', () => {

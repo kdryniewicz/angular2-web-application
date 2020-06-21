@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+
+<form class="ui large form segment">
+	<h3 class="ui header">Add A Meme:</h3>
+	<div class="field">
+		<label for="title">Title:</label>
+		<input name="title" #newTitle>
+	</div>
+	<div class="field">
+		<label for="author">Author:</label>
+		<input name="author" #newAuthor>
+	</div>
+
+    <div class="field">
+    <label for="imageUpload">Image:</label>
+    <app-upload #newImage></app-upload>
+    </div>
+	<button (click)="addMeme(newTitle, newAuthor, newImage)" class="ui positive right floated button">Submit Meme</button></form>
+	
+	<app-meme-manager *ngFor="let meme of sortedMemes()" [meme] = "meme"></app-meme-manager>
